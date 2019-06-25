@@ -1,0 +1,22 @@
+[
+  {
+    "SupplierID": 1,
+    "CompanyName": "Exotic Liquids"
+  },
+  {
+    "SupplierID": 2,
+    "CompanyName": "Grandma Kelly's Homestead"
+  },
+  {
+    "SupplierID": 3,
+    "CompanyName": "Formaggi Fortini s.r.l."
+  },
+  {
+    "SupplierID": 4,
+    "CompanyName": "Forêts d'érables"
+  },
+  {
+    "SupplierID": 5,
+    "CompanyName": "New Orleans Cajun Delights"
+  }
+]

@@ -1,0 +1,16 @@
+.listTwoColumnsSample .sapMCLI.sapMLIB {
+    height: 2.5rem;
+    padding-left: 1rem;
+}
+
+.listTwoColumnsSample .sapMCLI.sapMLIB .label {
+    height: 18px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #4a4a4a;
+}
+
+.sapUiMedia-Std-Phone .listTwoColumnsSample .sapMCLI.sapMLIB {
+    height: 5rem;
+}

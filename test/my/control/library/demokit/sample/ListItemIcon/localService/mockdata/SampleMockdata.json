@@ -1,0 +1,37 @@
+[
+  {
+    "title": "This is a title",
+    "value": "This is other title",
+    "description": "None highlight state",
+    "highlightState": "None",
+    "iconSrc": "sap-icon://myControlLibrary/car-outline-replacement-not-available"
+  },
+  {
+    "title": "This is a title",
+    "value": "This is other title",
+    "description": "Default highlight state",
+    "highlightState": "Default",
+    "iconSrc": "sap-icon://myControlLibrary/car-outline-replacement-not-available"
+  },
+  {
+    "title": "This is a title",
+    "value": "This is other title",
+    "description": "Success highlight state",
+    "highlightState": "Success",
+    "iconSrc": "sap-icon://myControlLibrary/check"
+  },
+  {
+    "title": "This is a title",
+    "value": "This is other title",
+    "description": "Error highlight state",
+    "highlightState": "Error",
+    "iconSrc": "sap-icon://myControlLibrary/exclamationmark"
+  },
+  {
+    "title": "This is a title",
+    "value": "This is other title",
+    "description": "Warning highlight state",
+    "highlightState": "Warning",
+    "iconSrc": "sap-icon://myControlLibrary/deactivate"
+  }
+]

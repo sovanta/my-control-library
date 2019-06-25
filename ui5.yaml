@@ -1,0 +1,6 @@
+---
+specVersion: "1.0"
+type: library
+metadata:
+  name: my.control.library
+  copyright: (c) Copyright 2009-${currentYear} sovanta AG

@@ -1,0 +1,5 @@
+{
+  "name" : "Badge",
+  "description" : "Badge Sample",
+  "component" : "my.control.library.Badge"
+}

@@ -1,0 +1,5 @@
+{
+  "name" : "Cube",
+  "description" : "Cube Sample",
+  "component" : "my.control.library.Cube"
+}

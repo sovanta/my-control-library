@@ -1,0 +1,20 @@
+<mvc:View
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:library="my.control.library."
+	height="100%"
+	controllerName="my.control.library.sample.ListNoDataIcon.Page">
+    <Page showHeader="false" class="sapUiContentPadding">
+		<library:List id="list" items="{sample>/}" showSeparators="Tile"
+					headerText="Users"
+					noDataText="No data available"
+					noDataImage="sap-icon://myControlLibrary/exclamationmark">
+			<library:noDataContent>
+				<Label text="No data control"/>
+			</library:noDataContent>
+			<CustomListItem>
+				<Label class="label" text="{sample>text}"/>
+			</CustomListItem>
+		</library:List>
+    </Page>
+</mvc:View>

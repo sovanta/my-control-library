@@ -1,0 +1,5 @@
+{
+  "name": "List - No Data Control",
+  "description": "Showing any control when there is no data",
+  "component" : "my.control.library.List"
+}

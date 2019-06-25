@@ -1,0 +1,47 @@
+<mvc:View
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core"
+	xmlns:library="my.control.library."
+	height="100%"
+	controllerName="my.control.library.sample.ListSelection.Page"
+	class="listSelectionSample"
+>
+    <Page showHeader="false" class="sapUiContentPadding">
+		<library:List
+				id="list"
+				items="{sample>/}"
+				showSeparators="Tile"
+				includeItemInSelection="{local>/includeItemInSelection}"
+				mode="MultiSelect">
+			<library:headerToolbar>
+				<Toolbar>
+					<content>
+						<ToolbarSpacer />
+						<Label text="Include Item in Selection:"/>
+						<library:Switch state="{local>/includeItemInSelection}"/>
+						<Label text="List Item type:" labelFor="state"/>
+						<Select
+								selectedKey="MultiSelect"
+								change="onHandleSelectChange">
+							<items>
+								<core:Item key="None" text="No Selection" />
+								<core:Item key="SingleSelect" text="Single Selection" />
+								<core:Item key="SingleSelectLeft" text="Single Selection Left" />
+								<core:Item key="SingleSelectMaster" text="Single Selection (Master)" />
+								<core:Item key="MultiSelect" text="Multi Selection" />
+							</items>
+						</Select>
+					</content>
+				</Toolbar>
+			</library:headerToolbar>
+			<library:ListItem title="{sample>text}" description="{sample>description}">
+				<library:preControl>
+					<FlexBox justifyContent="Center" alignItems="Center">
+						<library:Badge type="Bold" content="{sample>initial}"/>
+					</FlexBox>
+				</library:preControl>
+			</library:ListItem>
+		</library:List>
+    </Page>
+</mvc:View>

@@ -1,0 +1,5 @@
+{
+  "name": "List Item - Counter Property",
+  "description": "Using the counter property",
+  "component" : "my.control.library.ListItem"
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "ProductID": "123",
+    "ProductName": "Gummibärchen",
+    "SupplierID": 1,
+    "CategoryID": 0,
+    "QuantityPerUnit": 3,
+    "UnitPrice": 856.49,
+    "UnitsInStock": 100,
+    "Status": "Available"
+  },
+  {
+    "ProductID": "221",
+    "ProductName": "Kosmetiktücher",
+    "SupplierID": 2,
+    "CategoryID": 1,
+    "QuantityPerUnit": 10,
+    "UnitPrice": 81.7,
+    "UnitsInStock": 55,
+    "Status": "Discontinued"
+  },
+  {
+    "ProductID": "3221",
+    "ProductName": "Pasta Chef",
+    "SupplierID": 3,
+    "CategoryID": 2,
+    "QuantityPerUnit": 0,
+    "UnitPrice": 219,
+    "UnitsInStock": 0,
+    "Status": "Out of Stock"
+  },
+  {
+    "ProductID": "213",
+    "ProductName": "Bilderrahmen",
+    "SupplierID": 4,
+    "CategoryID": 3,
+    "QuantityPerUnit": 22,
+    "UnitPrice": 59,
+    "UnitsInStock": 55,
+    "Status": "Available"
+  }
+]

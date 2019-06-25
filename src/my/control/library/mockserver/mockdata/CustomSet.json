@@ -1,0 +1,67 @@
+[
+  {
+    "ID": 0,
+    "ProductID": 123,
+    "ProductName": "Gummibärchen",
+    "SupplierID": 1,
+    "CompanyName": "Exotic Liquids",
+    "CategoryID": 0,
+    "CategoryName": "Süßigkeiten",
+    "QuantityPerUnit": 3,
+    "UnitPrice": 856.49,
+    "UnitsInStock": 100,
+    "Status": "Available"
+  },
+  {
+    "ID": 1,
+    "ProductID": 221,
+    "ProductName": " Kosmetiktücher",
+    "SupplierID": 2,
+    "CompanyName": "Grandma Kelly's Homestead",
+    "CategoryID": 1,
+    "CategoryName": "Hygiene-Artikel",
+    "QuantityPerUnit": 10,
+    "UnitPrice": 81.7,
+    "UnitsInStock": 55,
+    "Status": "Discontinued"
+  },
+  {
+    "ID": 2,
+    "ProductID": 321,
+    "ProductName": " Pasta Chef",
+    "SupplierID": 3,
+    "CompanyName": "Formaggi Fortini s.r.l.",
+    "CategoryName": "Convenience-Produkte",
+    "CategoryID": 2,
+    "QuantityPerUnit": 0,
+    "UnitPrice": 219,
+    "UnitsInStock": 0,
+    "Status": "Out of Stock"
+  },
+  {
+    "ID": 3,
+    "ProductID": 2135,
+    "ProductName": "Bilderrahmen",
+    "SupplierID": 4,
+    "CompanyName": "Forêts d'érables",
+    "CategoryID": 3,
+    "CategoryName": "Verschiedenes",
+    "QuantityPerUnit": 22,
+    "UnitPrice": 59,
+    "UnitsInStock": 55,
+    "Status": "Available"
+  },
+  {
+    "ID": 4,
+    "ProductID": 2314,
+    "ProductName": "GutenMorgen-Tee",
+    "SupplierID": 5,
+    "CompanyName": "New Orleans Cajun Delights",
+    "CategoryID": 4,
+    "CategoryName": "Angebotsartikel",
+    "QuantityPerUnit": 2,
+    "UnitPrice": 529,
+    "UnitsInStock": 5,
+    "Status": "Available"
+  }
+]

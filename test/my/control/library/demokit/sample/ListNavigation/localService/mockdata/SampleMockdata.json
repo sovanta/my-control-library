@@ -1,0 +1,62 @@
+[
+  {
+    "text": "Daniel Eckert",
+    "description": "Description text",
+    "initial": "DE"
+  },
+  {
+    "text": "Anna-Kathrin Bergner",
+    "description": "Description text",
+    "initial": "AB"
+  },
+  {
+    "text": "Katrin Schmidt",
+    "description": "Description text",
+    "initial": "KS"
+  },
+  {
+    "text": "Simon Walz",
+    "description": "Description text",
+    "initial": "SW"
+  },
+  {
+    "text": "Alexander Mahler",
+    "description": "Description text",
+    "initial": "AM"
+  },
+  {
+    "text": "Sven Burger",
+    "description": "Description text",
+    "initial": "SB"
+  },
+  {
+    "text": "Kristin Kuester",
+    "description": "Description text",
+    "initial": "KK"
+  },
+  {
+    "text": "Matthias Meister",
+    "description": "Description text",
+    "initial": "MM"
+  },
+  {
+    "text": "Kevin Kuefer",
+    "description": "Description text",
+    "initial": "KK"
+  },
+  {
+    "text": "Simon Walz",
+    "description": "Description text",
+    "initial": "SW"
+  },
+  {
+    "text": "Katrin Schmidt",
+    "description": "Description text",
+    "initial": "KS"
+  },
+  {
+    "text": "Simon Walz",
+    "description": "Description text",
+    "initial": "SW"
+  }
+]

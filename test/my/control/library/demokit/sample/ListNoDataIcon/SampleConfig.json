@@ -1,0 +1,5 @@
+{
+  "name" : "List - No Data Icon",
+  "description" : "Showing an icon where there is no data",
+  "component" : "my.control.library.List"
+}

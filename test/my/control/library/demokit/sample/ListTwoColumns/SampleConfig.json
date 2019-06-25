@@ -1,0 +1,5 @@
+{
+  "name": "List - Two Columns",
+  "description": "Showing list with a table style",
+  "component" : "my.control.library.List"
+}

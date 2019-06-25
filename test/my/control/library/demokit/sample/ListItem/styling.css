@@ -1,0 +1,14 @@
+.listItemSample .myControlLibrary_List .sapMListUl {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.listItemSample .myControlLibrary_List .sapMListUl .icon {
+    width: 32px;
+    height: 32px;
+}
+
+.sapUiMedia-Std-Tablet .listItemSample .myControlLibrary_List .sapMListUl,
+.sapUiMedia-Std-Phone .listItemSample .myControlLibrary_List .sapMListUl {
+    width: 100%;
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Max Mustermann GmbH",
+    "description": "Musterstraße 12, 12345 Musterstadt",
+    "wrapDescription": true,
+    "information": "more info",
+    "value": "09:30 Uhr",
+    "highlight": "Default",
+    "highlightState": "Success",
+    "preControlIcon": "sap-icon://add-activity-2",
+    "counter": 200
+  },
+  {
+    "title": "Max Mustermann GmbH",
+    "description": "Musterstraße 12, 12345 Musterstadt",
+    "wrapDescription": false,
+    "preControlIcon": "sap-icon://contacts",
+    "value": "09:30 Uhr",
+    "highlight": "Success",
+    "highlightState": "Success",
+    "highlightText": "Success message",
+    "counter": 80
+  },
+  {
+    "title": "Max Mustermann GmbH",
+    "description": "Musterstraße 12, 12345 Musterstadt",
+    "wrapDescription": true,
+    "preControlIcon": "sap-icon://myControlLibrary/mail-normal",
+    "value": "09:30 Uhr",
+    "icon": "sap-icon://myControlLibrary/mail-normal",
+    "highlight": "Warning",
+    "highlightState": "Warning",
+    "highlightText": "Warning message",
+    "information": "Warning Info",
+    "counter": 50
+  }
+]

@@ -1,0 +1,5 @@
+{
+  "name": "List Item - Favorite",
+  "description": "Showing favorite icon with different states (allow, show, isFavorite)",
+  "component" : "my.control.library.ListItem"
+}

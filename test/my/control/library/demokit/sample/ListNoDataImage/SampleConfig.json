@@ -1,0 +1,5 @@
+{
+  "name" : "ListNoDataImage",
+  "description" : "ListNoDataImage Sample",
+  "component" : "my.control.library.List"
+}

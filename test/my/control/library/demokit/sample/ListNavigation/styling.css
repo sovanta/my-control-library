@@ -1,0 +1,19 @@
+.listNavigationSample .myControlLibrary_List .sapMListUl {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.listSample .myControlLibrary_List .sapMListShowSeparatorsTile .sapMLIB.sapMCLI {
+    padding: 5px;
+}
+
+.sapUiMedia-Std-Tablet .listNavigationSample .myControlLibrary_List .sapMListUl,
+.sapUiMedia-Std-Phone .listNavigationSample .myControlLibrary_List .sapMListUl {
+    width: 100%;
+}
+
+.listNavigationSample .myControlLibrary_List .sapMListShowSeparatorsNone.sapMListUl,
+.listNavigationSample .myControlLibrary_List .sapMListShowSeparatorsInner.sapMListUl,
+.listNavigationSample .myControlLibrary_List .sapMListShowSeparatorsAll.sapMListUl {
+    margin-top: 1rem;
+}

@@ -1,0 +1,5 @@
+{
+  "name" : "Button Inverted",
+  "description" : "Button Inverted Sample",
+  "component" : "my.control.library.Button"
+}

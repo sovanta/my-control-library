@@ -1,0 +1,5 @@
+{
+  "name": "List Item - Highlight",
+  "description": "Using highlight for left border and hihglightState for text and icon",
+  "component" : "my.control.library.ListItem"
+}

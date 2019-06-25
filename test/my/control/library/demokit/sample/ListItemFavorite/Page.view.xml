@@ -1,0 +1,41 @@
+<mvc:View
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core"
+	xmlns:library="my.control.library."
+	height="100%"
+	controllerName="my.control.library.sample.ListItemFavorite.Page"
+	class="listItemFavoriteSample">
+
+    <Page showHeader="false" class="sapUiContentPadding">
+        <library:List id="list" items="{sample>/}"
+                    showSeparators="Tile">
+            <library:headerToolbar>
+                <Toolbar>
+                    <content>
+                        <ToolbarSpacer />
+                        <Select
+                                id="state"
+                                selectedKey="Tile"
+                                change="onSelectChange">
+                            <items>
+                                <core:Item key="None" text="None" />
+                                <core:Item key="All" text="All" />
+                                <core:Item key="Inner" text="Inner" />
+                                <core:Item key="Tile" text="Tile" />
+                            </items>
+                        </Select>
+                    </content>
+                </Toolbar>
+            </library:headerToolbar>
+            <library:ListItem
+                    title="{sample>title}"
+                    description="{sample>description}"
+                    showFavorite="{sample>showFavorite}"
+                    isFavorite="{sample>isFavorite}"
+                    allowFavor="{sample>allowFavor}"
+                    favoriteChange="onFavoriteChange"
+            />
+        </library:List>
+    </Page>
+</mvc:View>

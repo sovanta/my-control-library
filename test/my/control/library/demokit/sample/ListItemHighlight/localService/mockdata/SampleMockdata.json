@@ -1,0 +1,42 @@
+[
+  {
+    "title": "This is a title",
+    "description": "Default company color",
+    "value": "This is the other title",
+    "highlight": "Default",
+    "highlightState": "Default",
+    "highlightText": "Hightlight"
+  },
+  {
+    "title": "This is a title",
+    "description": "Warning status",
+    "value": "This is the other title",
+    "highlight": "Warning",
+    "highlightState": "Warning",
+    "highlightText": "Highlight"
+  },
+  {
+    "title": "This is a title",
+    "description": "Error status",
+    "value": "This is the other title",
+    "highlight": "Error",
+    "highlightState": "Error",
+    "highlightText": "Highlight"
+  },
+  {
+    "title": "This is a title",
+    "description": "Success status",
+    "value": "This is the other title",
+    "highlight": "Success",
+    "highlightState": "Success",
+    "highlightText": "Highlight"
+  },
+  {
+    "title": "This is a title",
+    "description": "No status",
+    "value": "This is the other title",
+    "highlight": "None",
+    "highlightState": "None",
+    "highlightText": "Highlight"
+  }
+]

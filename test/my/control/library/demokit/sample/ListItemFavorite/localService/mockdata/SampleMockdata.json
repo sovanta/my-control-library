@@ -1,0 +1,28 @@
+[
+  {
+    "title": "Title",
+    "description": "Show and allow click on favorite icon",
+    "showFavorite": true,
+    "allowFavor": true
+  },
+  {
+    "title": "Title",
+    "description": "Default favorite value",
+    "isFavorite": true,
+    "showFavorite": true,
+    "allowFavor": true
+  },
+  {
+    "title": "Title",
+    "description": "Show and disable click on favorite icon",
+    "showFavorite": true,
+    "allowFavor": false
+  },
+  {
+    "title": "Title",
+    "description": "Not showing icon",
+    "value": "09:30Uhr",
+    "showFavorite": false,
+    "allowFavor": false
+  }
+]

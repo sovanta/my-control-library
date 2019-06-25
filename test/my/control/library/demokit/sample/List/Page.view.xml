@@ -1,0 +1,46 @@
+<mvc:View
+        xmlns="sap.m"
+        xmlns:mvc="sap.ui.core.mvc"
+        xmlns:core="sap.ui.core"
+        xmlns:library="my.control.library."
+        height="100%"
+        controllerName="my.control.library.sample.List.Page"
+        class="listSample"
+>
+    <Page showHeader="false" class="sapUiContentPadding">
+        <library:List id="list" items="{sample>/}" showSeparators="Tile"
+                      headerText="Users"
+                      noDataText="There is no data"
+                      noDataImage="sap-icon://myControlLibrary/exclamationmark">
+            <library:headerToolbar>
+                <Toolbar>
+                    <content>
+                        <ToolbarSpacer/>
+                        <Label text="List Item type:" labelFor="state"/>
+                        <Select
+                                id="state"
+                                selectedKey="Tile"
+                                change="onSelectChange">
+                            <items>
+                                <core:Item key="None" text="None"/>
+                                <core:Item key="All" text="All"/>
+                                <core:Item key="Inner" text="Inner"/>
+                                <core:Item key="Tile" text="Tile"/>
+                            </items>
+                        </Select>
+                    </content>
+                </Toolbar>
+            </library:headerToolbar>
+            <library:noDataContent>
+                <Label text="No data control"/>
+            </library:noDataContent>
+            <library:ListItem title="{sample>text}" description="{sample>description}">
+                <library:preControl>
+                    <FlexBox justifyContent="Center" alignItems="Center">
+                        <library:Badge type="Bold" content="{sample>initial}"/>
+                    </FlexBox>
+                </library:preControl>
+            </library:ListItem>
+        </library:List>
+    </Page>
+</mvc:View>

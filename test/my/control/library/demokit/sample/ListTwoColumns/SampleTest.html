@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>List Sample</title>
+
+    <script
+            id='sap-ui-bootstrap'
+            type='text/javascript'
+            src='/resources/sap-ui-core.js'
+            data-sap-ui-xx-bindingSyntax="complex"
+            data-sap-ui-libs='sap.m'
+            data-sap-ui-compatVersion="1.16"
+            data-sap-ui-resourceroots='{
+			"sap.ui.demo.mock": "test-resources/sap/ui/demokit/explored/",
+			"my.control.library.sample.ListTwoColumns":"./"
+		}'>
+
+    </script>
+
+    <style>
+        .sapUiGlobalBackgroundColor {
+            background-image: none !important;
+            background-color: #f8f8f8 !important;
+        }
+    </style>
+    <script>
+        sap.ui.getCore().attachInit(function () {
+            $.urlParam = function (name) {
+                var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+                if (results === null) {
+                    return null;
+                } else {
+                    return results[1] || 0;
+                }
+            };
+
+            function setGetParameter(paramName, paramValue, url) {
+                var hash = location.hash;
+                url = url.replace(hash, '');
+                if (url.indexOf(paramName + "=") >= 0) {
+                    var prefix = url.substring(0, url.indexOf(paramName));
+                    var suffix = url.substring(url.indexOf(paramName));
+                    suffix = suffix.substring(suffix.indexOf("=") + 1);
+                    suffix = (suffix.indexOf("&") >= 0) ? suffix.substring(suffix.indexOf("&")) : "";
+                    url = prefix + paramName + "=" + paramValue + suffix;
+                }
+                else {
+                    if (url.indexOf("?") < 0)
+                        url += "?" + paramName + "=" + paramValue;
+                    else
+                        url += "&" + paramName + "=" + paramValue;
+                }
+                return url + hash;
+            }
+
+
+            var url = window.location.href;
+            let currentTheme = $.urlParam("sap-theme");
+            if(!currentTheme){
+                url = setGetParameter("sap-theme", "base", url);
+            }
+
+            var debug = $.urlParam("sap-ui-debug");
+            if (debug === null) {
+                url = setGetParameter("sap-ui-debug", "true", url);
+            }
+            if (window.location.href !== url) {
+                window.location.href = url;
+                return;
+            }
+
+            window.__localSample = true;
+
+            var lessPath = "/resources/my/control/library/themes/" + currentTheme + "/library.less";
+
+            var themeLess = document.createElement('link');
+
+            less = { //less compiler configuration
+                useFileCache: true
+            };
+
+            themeLess.setAttribute('rel', 'stylesheet/less');
+            themeLess.setAttribute('type', 'text/css');
+            themeLess.setAttribute('href', lessPath);
+
+            document.head.appendChild(themeLess);
+
+            new sap.ui.core.ComponentContainer({
+                name: "my.control.library.sample.ListTwoColumns"
+            }).placeAt("content");
+        });
+    </script>
+</head>
+<body class="sapUiBody" id="content">
+
+</body>
+</html>

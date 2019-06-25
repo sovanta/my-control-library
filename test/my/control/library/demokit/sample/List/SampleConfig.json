@@ -1,0 +1,5 @@
+{
+  "name" : "List",
+  "description" : "List Sample",
+  "component" : "my.control.library.List"
+}

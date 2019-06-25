@@ -1,0 +1,27 @@
+[
+  {
+    "CategoryID": 0,
+    "CategoryName": "Süßigkeiten",
+    "CategoryPicUrl": "test-resources/sap/ui/demokit/explored/img/HT-6100.jpg"
+  },
+  {
+    "CategoryID": 1,
+    "CategoryName": "Hygiene-Artikel",
+    "CategoryPicUrl": "test-resources/sap/ui/demokit/explored/img/HT-1071.jpg"
+  },
+  {
+    "CategoryID": 2,
+    "CategoryName": "Convenience-Produkte",
+    "CategoryPicUrl": "test-resources/sap/ui/demokit/explored/img/HT-1112.jpg"
+  },
+  {
+    "CategoryID": 3,
+    "CategoryName": "Verschiedenes",
+    "CategoryPicUrl": "test-resources/sap/ui/demokit/explored/img/HT-1052.jpg"
+  },
+  {
+    "CategoryID": 4,
+    "CategoryName": "Angebotsartikel",
+    "CategoryPicUrl": "test-resources/sap/ui/demokit/explored/img/HT-1030.jpg"
+  }
+]

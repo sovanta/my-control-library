@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<library xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+  <name>my.control.library</name>
+  <vendor>sovanta AG</vendor>
+  <copyright>sovanta AG</copyright>
+  <version></version>
+
+  <documentation>The Demo UI5 control library.</documentation>
+
+  <dependencies>
+    <dependency>
+      <libraryName>sap.ui.core</libraryName>
+      <libraryName>sap.m</libraryName>
+    </dependency>
+  </dependencies>
+
+  <appData>
+    <!-- excludes for the JSDoc -->
+    <jsdoc xmlns="http://www.sap.com/ui5/buildext/jsdoc" >
+        <exclude name="my.control.library.js." />
+    </jsdoc>
+    <documentation xmlns="http://www.sap.com/ui5/buildext/documentation"
+        indexUrl="../../../../test-resources/my/control/library/demokit/docuindex.json"
+        resolve="lib" />
+    <releasenotes xmlns="http://www.sap.com/ui5/buildext/releasenotes"
+        url="../../../../test-resources/my/control/library/relnotes/changes-{major}.{minor}.json"
+        resolve="lib" />
+    <ownership xmlns="http://www.sap.com/ui5/buildext/ownership">
+
+    </ownership>
+  </appData>
+
+</library>

@@ -1,0 +1,21 @@
+{
+  "name": "@sovanta/my-control-library",
+  "version": "1.0.0",
+  "description": "This is an UI5 Control Library.",
+  "scripts": {
+    "build": "ui5 build"
+  },
+  "dependencies": {
+    "@openui5/sap.m": "1.52.22",
+    "@openui5/sap.ui.core": "1.52.22",
+    "@openui5/sap.ui.layout": "1.52.22",
+    "@openui5/sap.ui.unified": "1.52.22"
+  },
+  "devDependencies": {
+    "@ui5/cli": "1.0.0",
+    "mkdirp": "^0.5.1"
+  },
+  "homepage": "https://sovanta.com",
+  "author": "sovanta AG",
+  "license": "MIT"
+}

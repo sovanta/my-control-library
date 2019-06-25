@@ -1,0 +1,10 @@
+<mvc:View
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:library="my.control.library."
+	height="100%"
+	controllerName="my.control.library.sample.Cube.Page">
+    <Page showHeader="false" class="sapUiContentPadding">
+        <library:Cube/>
+    </Page>
+</mvc:View>

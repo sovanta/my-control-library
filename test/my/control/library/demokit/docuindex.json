@@ -1,0 +1,176 @@
+{
+    "explored": {
+        "entitiesDefaults": {
+            "appComponent": "",
+            "-------commment--------": "leave the formFactors at - this will be mapped to 'Independent' ba the bootstrap of the explored app",
+            "formFactors": "-"
+        },
+        "samplesRef": {
+            "namespace": "my.control.library.sample",
+            "ref": "test-resources/my/control/library/demokit/sample"
+        },
+        "entities": [
+            {
+                "id": "my.control.library.Badge",
+                "name": "Badge",
+                "category": "Demo",
+                "since": "1.0",
+                "samples": [
+                    "my.control.library.sample.Badge"
+                ]
+            },
+            {
+                "id": "my.control.library.Button",
+                "name": "Button",
+                "category": "Demo",
+                "since": "1.0",
+                "samples": [
+                    "my.control.library.sample.Button",
+                    "my.control.library.sample.ButtonInverted"
+                ]
+            },
+            {
+                "id": "my.control.library.Cube",
+                "name": "Cube",
+                "category": "Demo",
+                "since": "1.0",
+                "samples": [
+                    "my.control.library.sample.Cube"
+                ]
+            },
+            {
+                "id": "my.control.library.List",
+                "name": "List",
+                "category": "Demo",
+                "since": "1.0",
+                "samples": [
+                    "my.control.library.sample.List",
+                    "my.control.library.sample.ListNavigation",
+                    "my.control.library.sample.ListNoDataControl",
+                    "my.control.library.sample.ListNoDataIcon",
+                    "my.control.library.sample.ListNoDataImage",
+                    "my.control.library.sample.ListSelection",
+                    "my.control.library.sample.ListTwoColumns"
+                ]
+            },
+            {
+                "id": "my.control.library.ListItem",
+                "name": "ListItem",
+                "category": "Demo",
+                "since": "1.0",
+                "samples": [
+                    "my.control.library.sample.ListItem",
+                    "my.control.library.sample.ListItemCounterAgg",
+                    "my.control.library.sample.ListItemCounterProp",
+                    "my.control.library.sample.ListItemFavorite",
+                    "my.control.library.sample.ListItemHighlight",
+                    "my.control.library.sample.ListItemIcon"
+                ]
+            }
+        ],
+        "samples": [
+            {
+                "name": "Badge",
+                "description": "Badge Sample",
+                "component": "my.control.library.Badge",
+                "id": "my.control.library.sample.Badge"
+            },
+            {
+                "name": "Button",
+                "description": "Button Sample",
+                "component": "my.control.library.Button",
+                "id": "my.control.library.sample.Button"
+            },
+            {
+                "name": "Button Inverted",
+                "description": "Button Inverted Sample",
+                "component": "my.control.library.Button",
+                "id": "my.control.library.sample.ButtonInverted"
+            },
+            {
+                "name": "Cube",
+                "description": "Cube Sample",
+                "component": "my.control.library.Cube",
+                "id": "my.control.library.sample.Cube"
+            },
+            {
+                "name": "List",
+                "description": "List Sample",
+                "component": "my.control.library.List",
+                "id": "my.control.library.sample.List"
+            },
+            {
+                "name": "ListItem",
+                "description": "ListItem Sample",
+                "component": "my.control.library.ListItem",
+                "id": "my.control.library.sample.ListItem"
+            },
+            {
+                "name": "List Item - Counter Aggregation",
+                "description": "Using a custom Counter Badge control",
+                "component": "my.control.library.ListItem",
+                "id": "my.control.library.sample.ListItemCounterAgg"
+            },
+            {
+                "name": "List Item - Counter Property",
+                "description": "Using the counter property",
+                "component": "my.control.library.ListItem",
+                "id": "my.control.library.sample.ListItemCounterProp"
+            },
+            {
+                "name": "List Item - Favorite",
+                "description": "Showing favorite icon with different states (allow, show, isFavorite)",
+                "component": "my.control.library.ListItem",
+                "id": "my.control.library.sample.ListItemFavorite"
+            },
+            {
+                "name": "List Item - Highlight",
+                "description": "Using highlight for left border and hihglightState for text and icon",
+                "component": "my.control.library.ListItem",
+                "id": "my.control.library.sample.ListItemHighlight"
+            },
+            {
+                "name": "ListItemIcon",
+                "description": "ListItemIcon Sample",
+                "component": "my.control.library.ListItem",
+                "id": "my.control.library.sample.ListItemIcon"
+            },
+            {
+                "name": "List Item - Navigation",
+                "description": "Using property type",
+                "component": "my.control.library.List",
+                "id": "my.control.library.sample.ListNavigation"
+            },
+            {
+                "name": "List - No Data Control",
+                "description": "Showing any control when there is no data",
+                "component": "my.control.library.List",
+                "id": "my.control.library.sample.ListNoDataControl"
+            },
+            {
+                "name": "List - No Data Icon",
+                "description": "Showing an icon where there is no data",
+                "component": "my.control.library.List",
+                "id": "my.control.library.sample.ListNoDataIcon"
+            },
+            {
+                "name": "ListNoDataImage",
+                "description": "ListNoDataImage Sample",
+                "component": "my.control.library.List",
+                "id": "my.control.library.sample.ListNoDataImage"
+            },
+            {
+                "name": "List - Selection",
+                "description": "Different selection modes",
+                "component": "my.control.library.List",
+                "id": "my.control.library.sample.ListSelection"
+            },
+            {
+                "name": "List - Two Columns",
+                "description": "Showing list with a table style",
+                "component": "my.control.library.List",
+                "id": "my.control.library.sample.ListTwoColumns"
+            }
+        ]
+    }
+}

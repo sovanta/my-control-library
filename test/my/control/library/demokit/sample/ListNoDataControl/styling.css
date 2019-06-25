@@ -1,0 +1,13 @@
+.noDataControlSample .myControlLibrary_List .sapMListUl {
+    width: 50%;
+    margin: 0 auto;
+}
+.noDataControlSample .myControlLibrary_List .sapMListShowSeparatorsTile .sapMLIB.sapMCLI {
+    padding: 5px;
+}
+
+.noDataControlSample .myControlLibrary_List .sapMListShowSeparatorsNone.sapMListUl,
+.noDataControlSample .myControlLibrary_List .sapMListShowSeparatorsInner.sapMListUl,
+.noDataControlSample .myControlLibrary_List .sapMListShowSeparatorsAll.sapMListUl {
+    margin-top: 1rem;
+}

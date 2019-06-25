@@ -1,0 +1,487 @@
+<mvc:View
+        xmlns="sap.m"
+        xmlns:mvc="sap.ui.core.mvc"
+        xmlns:library="my.control.library."
+        height="100%"
+        controllerName="my.control.library.sample.Badge.Page"
+        class="myControlLibrary_Badge_Sample"
+>
+    <Page showHeader="false" class="sapUiContentPadding">
+        <VBox>
+            <HBox class="sapUiSmallMarginTop">
+                <VBox class="sapUiTinyMargin">
+                    <Label text="Toggle press event:"/>
+                    <Switch change="onTogglePressEvent"/>
+                </VBox>
+                <VBox class="sapUiTinyMargin">
+                    <Label text="Show additional Icon:"/>
+                    <Switch state="{local>/showAdditionalIcon}"/>
+                </VBox>
+                <VBox class="sapUiTinyMargin">
+                    <Label text="Badge Enabled:"/>
+                    <Switch state="{local>/enabled}"/>
+                </VBox>
+                <HBox wrap="Wrap">
+                    <VBox class="sapUiTinyMargin" width="300px">
+                        <Text text="Change Additional Icon"/>
+                        <Input value="{local>/srcAdditionalIcon}"/>
+                    </VBox>
+                    <VBox class="sapUiTinyMargin" width="300px">
+                        <Text text="Change Additional Icon Color"/>
+                        <Input value="{local>/additionalIconColor}"/>
+                    </VBox>
+                    <VBox class="sapUiTinyMargin" width="300px">
+                        <Text text="Change Additional Icon Background-Color"/>
+                        <Input value="{local>/additionalIconBgColor}"/>
+                    </VBox>
+                </HBox>
+            </HBox>
+            <!-- ================================================================= -->
+            <!--                      Type: Bold, Shape: Circle                    -->
+            <!-- ================================================================= -->
+            <Title text="Light Type &amp; Circle Shape" titleStyle="H2" class="sapUiMediumMarginTop"/>
+            <VBox>
+                <HBox wrap="Wrap">
+                    <VBox class="sapUiTinyMargin">
+                        <Title text="Small" titleStyle="H3"/>
+                        <HBox>
+                            <library:Badge
+                                    enabled="{local>/enabled}"
+                                    content="{local>/initials}"
+                                    iconSrc="{local>/srcAdditionalIcon}"
+                                    showIcon="{local>/showAdditionalIcon}"
+                                    iconColor="{local>/additionalIconColor}"
+                                    iconBackgroundColor="{local>/additionalIconBgColor}"
+                            />
+                            <library:Badge
+                                    enabled="{local>/enabled}"
+                                    content="{local>/iconPath}"
+                                    iconSrc="{local>/srcAdditionalIcon}"
+                                    showIcon="{local>/showAdditionalIcon}"
+                                    iconColor="{local>/additionalIconColor}"
+                                    iconBackgroundColor="{local>/additionalIconBgColor}"
+                            />
+                            <library:Badge
+                                    enabled="{local>/enabled}"
+                                    content="{local>/imagePath}"
+                                    iconSrc="{local>/srcAdditionalIcon}"
+                                    showIcon="{local>/showAdditionalIcon}"
+                                    iconColor="{local>/additionalIconColor}"
+                                    iconBackgroundColor="{local>/additionalIconBgColor}"
+                            />
+                        </HBox>
+                    </VBox>
+                    <VBox class="sapUiTinyMargin">
+                        <Title text="Medium" titleStyle="H3"/>
+                        <HBox>
+                            <library:Badge
+                                    enabled="{local>/enabled}"
+                                    size="Medium"
+                                    content="{local>/initials}"
+                                    iconSrc="{local>/srcAdditionalIcon}"
+                                    showIcon="{local>/showAdditionalIcon}"
+                                    iconColor="{local>/additionalIconColor}"
+                                    iconBackgroundColor="{local>/additionalIconBgColor}"
+                            />
+                            <library:Badge
+                                    enabled="{local>/enabled}"
+                                    size="Medium"
+                                    content="{local>/iconPath}"
+                                    iconSrc="{local>/srcAdditionalIcon}"
+                                    showIcon="{local>/showAdditionalIcon}"
+                                    iconColor="{local>/additionalIconColor}"
+                                    iconBackgroundColor="{local>/additionalIconBgColor}"
+                            />
+                            <library:Badge
+                                    enabled="{local>/enabled}"
+                                    size="Medium"
+                                    content="{local>/imagePath}"
+                                    iconSrc="{local>/srcAdditionalIcon}"
+                                    showIcon="{local>/showAdditionalIcon}"
+                                    iconColor="{local>/additionalIconColor}"
+                                    iconBackgroundColor="{local>/additionalIconBgColor}"
+                            />
+                        </HBox>
+                    </VBox>
+                    <VBox class="sapUiTinyMargin">
+                        <Title text="Large" titleStyle="H3"/>
+                        <HBox>
+                            <library:Badge
+                                    enabled="{local>/enabled}"
+                                    size="Large"
+                                    content="{local>/initials}"
+                                    iconSrc="{local>/srcAdditionalIcon}"
+                                    showIcon="{local>/showAdditionalIcon}"
+                                    iconColor="{local>/additionalIconColor}"
+                                    iconBackgroundColor="{local>/additionalIconBgColor}"
+                            />
+                            <library:Badge
+                                    enabled="{local>/enabled}"
+                                    size="Large"
+                                    content="{local>/iconPath}"
+                                    iconSrc="{local>/srcAdditionalIcon}"
+                                    showIcon="{local>/showAdditionalIcon}"
+                                    iconColor="{local>/additionalIconColor}"
+                                    iconBackgroundColor="{local>/additionalIconBgColor}"
+                            />
+                            <library:Badge
+                                    enabled="{local>/enabled}"
+                                    size="Large"
+                                    content="{local>/imagePath}"
+                                    iconSrc="{local>/srcAdditionalIcon}"
+                                    showIcon="{local>/showAdditionalIcon}"
+                                    iconColor="{local>/additionalIconColor}"
+                                    iconBackgroundColor="{local>/additionalIconBgColor}"
+                            />
+                        </HBox>
+                    </VBox>
+                </HBox>
+            </VBox>
+            <!-- ================================================================= -->
+            <!--                      Type: Bold, Shape: Circle                    -->
+            <!-- ================================================================= -->
+            <VBox>
+                <Title text="Bold Type &amp; Circle Shape" titleStyle="H2"/>
+                <HBox wrap="Wrap">
+                    <VBox class="sapUiTinyMargin">
+                        <Title text="Small" titleStyle="H3"/>
+                        <HBox>
+                            <library:Badge
+                                    enabled="{local>/enabled}"
+                                    type="Bold"
+                                    content="{local>/initials}"
+                                    iconSrc="{local>/srcAdditionalIcon}"
+                                    showIcon="{local>/showAdditionalIcon}"
+                                    iconColor="{local>/additionalIconColor}"
+                                    iconBackgroundColor="{local>/additionalIconBgColor}"
+                            />
+                            <library:Badge
+                                    enabled="{local>/enabled}"
+                                    type="Bold"
+                                    content="{local>/iconPath}"
+                                    iconSrc="{local>/srcAdditionalIcon}"
+                                    showIcon="{local>/showAdditionalIcon}"
+                                    iconColor="{local>/additionalIconColor}"
+                                    iconBackgroundColor="{local>/additionalIconBgColor}"
+                            />
+                            <library:Badge
+                                    enabled="{local>/enabled}"
+                                    type="Bold"
+                                    content="{local>/imagePath}"
+                                    iconSrc="{local>/srcAdditionalIcon}"
+                                    showIcon="{local>/showAdditionalIcon}"
+                                    iconColor="{local>/additionalIconColor}"
+                                    iconBackgroundColor="{local>/additionalIconBgColor}"
+                            />
+                        </HBox>
+                    </VBox>
+                    <VBox class="sapUiTinyMargin">
+                        <Title text="Medium" titleStyle="H3"/>
+                        <HBox>
+                            <library:Badge
+                                    enabled="{local>/enabled}"
+                                    type="Bold"
+                                    size="Medium"
+                                    content="{local>/initials}"
+                                    iconSrc="{local>/srcAdditionalIcon}"
+                                    showIcon="{local>/showAdditionalIcon}"
+                                    iconColor="{local>/additionalIconColor}"
+                                    iconBackgroundColor="{local>/additionalIconBgColor}"
+                            />
+                            <library:Badge
+                                    enabled="{local>/enabled}"
+                                    type="Bold"
+                                    size="Medium"
+                                    content="{local>/iconPath}"
+                                    iconSrc="{local>/srcAdditionalIcon}"
+                                    showIcon="{local>/showAdditionalIcon}"
+                                    iconColor="{local>/additionalIconColor}"
+                                    iconBackgroundColor="{local>/additionalIconBgColor}"
+                            />
+                            <library:Badge
+                                    enabled="{local>/enabled}"
+                                    type="Bold"
+                                    size="Medium"
+                                    content="{local>/imagePath}"
+                                    iconSrc="{local>/srcAdditionalIcon}"
+                                    showIcon="{local>/showAdditionalIcon}"
+                                    iconColor="{local>/additionalIconColor}"
+                                    iconBackgroundColor="{local>/additionalIconBgColor}"
+                            />
+                        </HBox>
+                    </VBox>
+                    <VBox class="sapUiTinyMargin">
+                        <Title text="Large" titleStyle="H3"/>
+                        <HBox>
+                            <library:Badge
+                                    enabled="{local>/enabled}"
+                                    type="Bold"
+                                    size="Large"
+                                    content="{local>/initials}"
+                                    iconSrc="{local>/srcAdditionalIcon}"
+                                    showIcon="{local>/showAdditionalIcon}"
+                                    iconColor="{local>/additionalIconColor}"
+                                    iconBackgroundColor="{local>/additionalIconBgColor}"
+                            />
+                            <library:Badge
+                                    enabled="{local>/enabled}"
+                                    type="Bold"
+                                    size="Large"
+                                    content="{local>/iconPath}"
+                                    iconSrc="{local>/srcAdditionalIcon}"
+                                    showIcon="{local>/showAdditionalIcon}"
+                                    iconColor="{local>/additionalIconColor}"
+                                    iconBackgroundColor="{local>/additionalIconBgColor}"
+                            />
+                            <library:Badge
+                                    enabled="{local>/enabled}"
+                                    type="Bold"
+                                    size="Large"
+                                    content="{local>/imagePath}"
+                                    iconSrc="{local>/srcAdditionalIcon}"
+                                    showIcon="{local>/showAdditionalIcon}"
+                                    iconColor="{local>/additionalIconColor}"
+                                    iconBackgroundColor="{local>/additionalIconBgColor}"
+                            />
+                        </HBox>
+                    </VBox>
+                </HBox>
+            </VBox>
+            <!-- ================================================================= -->
+            <!--                      Type: Light, Shape: Square                   -->
+            <!-- ================================================================= -->
+            <VBox>
+                <Title text="Light Type &amp; Square Shape" titleStyle="H2"/>
+                <HBox wrap="Wrap">
+                    <VBox class="sapUiTinyMargin">
+                        <Title text="Small" titleStyle="H3"/>
+                        <HBox>
+                            <library:Badge
+                                    enabled="{local>/enabled}"
+                                    shape="Square"
+                                    content="{local>/initials}"
+                                    iconSrc="{local>/srcAdditionalIcon}"
+                                    showIcon="{local>/showAdditionalIcon}"
+                                    iconColor="{local>/additionalIconColor}"
+                                    iconBackgroundColor="{local>/additionalIconBgColor}"
+                            />
+                            <library:Badge
+                                    enabled="{local>/enabled}"
+                                    shape="Square"
+                                    content="{local>/iconPath}"
+                                    iconSrc="{local>/srcAdditionalIcon}"
+                                    showIcon="{local>/showAdditionalIcon}"
+                                    iconColor="{local>/additionalIconColor}"
+                                    iconBackgroundColor="{local>/additionalIconBgColor}"
+                            />
+                            <library:Badge
+                                    enabled="{local>/enabled}"
+                                    shape="Square"
+                                    content="{local>/imagePath}"
+                                    iconSrc="{local>/srcAdditionalIcon}"
+                                    showIcon="{local>/showAdditionalIcon}"
+                                    iconColor="{local>/additionalIconColor}"
+                                    iconBackgroundColor="{local>/additionalIconBgColor}"
+                            />
+                        </HBox>
+                    </VBox>
+                    <VBox class="sapUiTinyMargin">
+                        <Title text="Medium" titleStyle="H3"/>
+                        <HBox>
+                            <HBox>
+                                <library:Badge
+                                        enabled="{local>/enabled}"
+                                        shape="Square"
+                                        size="Medium"
+                                        content="{local>/initials}"
+                                        iconSrc="{local>/srcAdditionalIcon}"
+                                        showIcon="{local>/showAdditionalIcon}"
+                                        iconColor="{local>/additionalIconColor}"
+                                        iconBackgroundColor="{local>/additionalIconBgColor}"
+                                />
+                                <library:Badge
+                                        enabled="{local>/enabled}"
+                                        shape="Square"
+                                        size="Medium"
+                                        content="{local>/iconPath}"
+                                        iconSrc="{local>/srcAdditionalIcon}"
+                                        showIcon="{local>/showAdditionalIcon}"
+                                        iconColor="{local>/additionalIconColor}"
+                                        iconBackgroundColor="{local>/additionalIconBgColor}"
+                                />
+                                <library:Badge
+                                        enabled="{local>/enabled}"
+                                        shape="Square"
+                                        size="Medium"
+                                        content="{local>/imagePath}"
+                                        iconSrc="{local>/srcAdditionalIcon}"
+                                        showIcon="{local>/showAdditionalIcon}"
+                                        iconColor="{local>/additionalIconColor}"
+                                        iconBackgroundColor="{local>/additionalIconBgColor}"
+                                />
+                            </HBox>
+                        </HBox>
+                    </VBox>
+                    <VBox class="sapUiTinyMargin">
+                        <Title text="Large" titleStyle="H3"/>
+                        <HBox>
+                            <library:Badge
+                                    enabled="{local>/enabled}"
+                                    shape="Square"
+                                    size="Large"
+                                    content="{local>/initials}"
+                                    iconSrc="{local>/srcAdditionalIcon}"
+                                    showIcon="{local>/showAdditionalIcon}"
+                                    iconColor="{local>/additionalIconColor}"
+                                    iconBackgroundColor="{local>/additionalIconBgColor}"
+                            />
+                            <library:Badge
+                                    enabled="{local>/enabled}"
+                                    shape="Square"
+                                    size="Large"
+                                    content="{local>/iconPath}"
+                                    iconSrc="{local>/srcAdditionalIcon}"
+                                    showIcon="{local>/showAdditionalIcon}"
+                                    iconColor="{local>/additionalIconColor}"
+                                    iconBackgroundColor="{local>/additionalIconBgColor}"
+                            />
+                            <library:Badge
+                                    enabled="{local>/enabled}"
+                                    shape="Square"
+                                    size="Large"
+                                    content="{local>/imagePath}"
+                                    iconSrc="{local>/srcAdditionalIcon}"
+                                    showIcon="{local>/showAdditionalIcon}"
+                                    iconColor="{local>/additionalIconColor}"
+                                    iconBackgroundColor="{local>/additionalIconBgColor}"
+                            />
+                        </HBox>
+                    </VBox>
+                </HBox>
+            </VBox>
+            <!-- ================================================================= -->
+            <!--                      Type: Bold, Shape: Square                    -->
+            <!-- ================================================================= -->
+            <VBox>
+                <Title text="Bold Type &amp; Square Shape" titleStyle="H2"/>
+                <HBox wrap="Wrap">
+                    <VBox class="sapUiTinyMargin">
+                        <Title text="Small" titleStyle="H3"/>
+                        <HBox>
+                            <library:Badge
+                                    enabled="{local>/enabled}"
+                                    type="Bold"
+                                    shape="Square"
+                                    content="{local>/initials}"
+                                    iconSrc="{local>/srcAdditionalIcon}"
+                                    showIcon="{local>/showAdditionalIcon}"
+                                    iconColor="{local>/additionalIconColor}"
+                                    iconBackgroundColor="{local>/additionalIconBgColor}"
+                            />
+                            <library:Badge
+                                    enabled="{local>/enabled}"
+                                    type="Bold"
+                                    shape="Square"
+                                    content="{local>/iconPath}"
+                                    iconSrc="{local>/srcAdditionalIcon}"
+                                    showIcon="{local>/showAdditionalIcon}"
+                                    iconColor="{local>/additionalIconColor}"
+                                    iconBackgroundColor="{local>/additionalIconBgColor}"
+                            />
+                            <library:Badge
+                                    enabled="{local>/enabled}"
+                                    type="Bold"
+                                    shape="Square"
+                                    content="{local>/imagePath}"
+                                    iconSrc="{local>/srcAdditionalIcon}"
+                                    showIcon="{local>/showAdditionalIcon}"
+                                    iconColor="{local>/additionalIconColor}"
+                                    iconBackgroundColor="{local>/additionalIconBgColor}"
+                            />
+                        </HBox>
+                    </VBox>
+                    <VBox class="sapUiTinyMargin">
+                        <Title text="Medium" titleStyle="H3"/>
+                        <HBox>
+                            <HBox>
+                                <library:Badge
+                                        enabled="{local>/enabled}"
+                                        type="Bold"
+                                        shape="Square"
+                                        size="Medium"
+                                        content="{local>/initials}"
+                                        iconSrc="{local>/srcAdditionalIcon}"
+                                        showIcon="{local>/showAdditionalIcon}"
+                                        iconColor="{local>/additionalIconColor}"
+                                        iconBackgroundColor="{local>/additionalIconBgColor}"
+                                />
+                                <library:Badge
+                                        enabled="{local>/enabled}"
+                                        type="Bold"
+                                        shape="Square"
+                                        size="Medium"
+                                        content="{local>/iconPath}"
+                                        iconSrc="{local>/srcAdditionalIcon}"
+                                        showIcon="{local>/showAdditionalIcon}"
+                                        iconColor="{local>/additionalIconColor}"
+                                        iconBackgroundColor="{local>/additionalIconBgColor}"
+                                />
+                                <library:Badge
+                                        enabled="{local>/enabled}"
+                                        type="Bold"
+                                        shape="Square"
+                                        size="Medium"
+                                        content="{local>/imagePath}"
+                                        iconSrc="{local>/srcAdditionalIcon}"
+                                        showIcon="{local>/showAdditionalIcon}"
+                                        iconColor="{local>/additionalIconColor}"
+                                        iconBackgroundColor="{local>/additionalIconBgColor}"
+                                />
+                            </HBox>
+                        </HBox>
+                    </VBox>
+                    <VBox class="sapUiTinyMargin">
+                        <Title text="Large" titleStyle="H3"/>
+                        <HBox>
+                            <library:Badge
+                                    enabled="{local>/enabled}"
+                                    type="Bold"
+                                    shape="Square"
+                                    size="Large"
+                                    content="{local>/initials}"
+                                    iconSrc="{local>/srcAdditionalIcon}"
+                                    showIcon="{local>/showAdditionalIcon}"
+                                    iconColor="{local>/additionalIconColor}"
+                                    iconBackgroundColor="{local>/additionalIconBgColor}"
+                            />
+                            <library:Badge
+                                    enabled="{local>/enabled}"
+                                    type="Bold"
+                                    shape="Square"
+                                    size="Large"
+                                    content="{local>/iconPath}"
+                                    iconSrc="{local>/srcAdditionalIcon}"
+                                    showIcon="{local>/showAdditionalIcon}"
+                                    iconColor="{local>/additionalIconColor}"
+                                    iconBackgroundColor="{local>/additionalIconBgColor}"
+                            />
+                            <library:Badge
+                                    enabled="{local>/enabled}"
+                                    type="Bold"
+                                    shape="Square"
+                                    size="Large"
+                                    content="{local>/imagePath}"
+                                    iconSrc="{local>/srcAdditionalIcon}"
+                                    showIcon="{local>/showAdditionalIcon}"
+                                    iconColor="{local>/additionalIconColor}"
+                                    iconBackgroundColor="{local>/additionalIconBgColor}"
+                            />
+                        </HBox>
+                    </VBox>
+
+                </HBox>
+            </VBox>
+        </VBox>
+
+    </Page>
+</mvc:View>

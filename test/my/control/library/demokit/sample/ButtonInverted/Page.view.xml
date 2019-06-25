@@ -1,0 +1,695 @@
+<mvc:View
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:library="my.control.library."
+	height="100%"
+	controllerName="my.control.library.sample.ButtonInverted.Page">
+    <Page showHeader="false" class="SamplePage sapUiContentPadding">
+        <HBox>
+            <VBox class="sapUiSmallMarginEnd">
+                <Label class="SamplePageText" text="Button Text"/>
+                <Input value="{sample>/text}"/>
+            </VBox>
+
+            <VBox class="sapUiSmallMarginEnd">
+                <Label class="SamplePageText" text="Button Icon"/>
+                <Input value="{sample>/icon}"/>
+            </VBox>
+
+            <VBox class="sapUiSmallMarginEnd">
+                <Label class="SamplePageText" text="Button Busy"/>
+                <Switch state="{sample>/busy}"/>
+            </VBox>
+
+            <VBox class="sapUiSmallMarginEnd">
+                <Label class="SamplePageText" text="Button Busy Delay"/>
+                <Input value="0" type="Number" change="onDelayChange"/>
+            </VBox>
+        </HBox>
+
+        <!--Regular Big Filled-->
+        <Title text="Regular Big Filled" class="SamplePageText sapUiMediumMarginTopBottom"/>
+
+        <HBox>
+
+            <VBox class="sapUiSmallMarginEnd">
+                <Text class="SamplePageText sapUiMediumMarginBottom" text="Default / Hover / Active / Focus"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Regular"
+                                semanticType="Basic" size="Big" design="Inverted"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Regular"
+                                semanticType="Highlight" size="Big" design="Inverted"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Regular"
+                                semanticType="Sales" size="Big" design="Inverted"/>
+            </VBox>
+
+            <VBox class="sapUiSmallMarginEnd">
+                <Text class="SamplePageText sapUiMediumMarginBottom" text="Disabled"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Regular"
+                                semanticType="Basic" size="Big" design="Inverted" enabled="false"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Regular"
+                                semanticType="Highlight" size="Big" design="Inverted" enabled="false"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Regular"
+                                semanticType="Sales" size="Big" design="Inverted" enabled="false"/>
+            </VBox>
+
+            <VBox class="sapUiSmallMarginEnd">
+                <Text class="SamplePageText sapUiMediumMarginBottom" text="Busy"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Regular"
+                                semanticType="Basic" size="Big" design="Inverted" busy="{sample>/busy}" busyIndicatorDelay="{sample>/delay}"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Regular"
+                                semanticType="Highlight" size="Big" design="Inverted" busy="{sample>/busy}" busyIndicatorDelay="{sample>/delay}"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Regular"
+                                semanticType="Sales" size="Big" design="Inverted" busy="{sample>/busy}" busyIndicatorDelay="{sample>/delay}"/>
+            </VBox>
+
+        </HBox>
+
+        <!--Regular Small Filled-->
+        <Title text="Regular Small Filled" class="SamplePageText sapUiMediumMarginTopBottom"/>
+
+        <HBox>
+
+            <VBox class="sapUiSmallMarginEnd">
+                <Text class="SamplePageText sapUiMediumMarginBottom" text="Default / Hover / Active / Focus"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Regular"
+                                semanticType="Basic" size="Small" design="Inverted"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Regular"
+                                semanticType="Highlight" size="Small" design="Inverted"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Regular"
+                                semanticType="Sales" size="Small" design="Inverted"/>
+            </VBox>
+
+            <VBox class="sapUiSmallMarginEnd">
+                <Text class="SamplePageText sapUiMediumMarginBottom" text="Disabled"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Regular"
+                                semanticType="Basic" size="Small" design="Inverted" enabled="false"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Regular"
+                                semanticType="Highlight" size="Small" design="Inverted" enabled="false"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Regular"
+                                semanticType="Sales" size="Small" design="Inverted" enabled="false"/>
+            </VBox>
+
+            <VBox class="sapUiSmallMarginEnd">
+                <Text class="SamplePageText sapUiMediumMarginBottom" text="Busy"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Regular"
+                                semanticType="Basic" size="Small" design="Inverted" busy="{sample>/busy}" busyIndicatorDelay="{sample>/delay}"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Regular"
+                                semanticType="Highlight" size="Small" design="Inverted" busy="{sample>/busy}" busyIndicatorDelay="{sample>/delay}"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Regular"
+                                semanticType="Sales" size="Small" design="Inverted" busy="{sample>/busy}" busyIndicatorDelay="{sample>/delay}"/>
+            </VBox>
+
+        </HBox>
+
+        <!--Regular Big Ghost-->
+        <Title text="Regular Big Ghost" class="SamplePageText sapUiMediumMarginTopBottom"/>
+
+        <HBox>
+
+            <VBox class="sapUiSmallMarginEnd">
+                <Text class="SamplePageText sapUiMediumMarginBottom" text="Default / Hover / Active / Focus"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Regular"
+                                semanticType="Basic" size="Big" design="Inverted"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Regular"
+                                semanticType="Highlight" size="Big" design="Inverted"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Regular"
+                                semanticType="Sales" size="Big" design="Inverted"/>
+            </VBox>
+
+            <VBox class="sapUiSmallMarginEnd">
+                <Text class="SamplePageText sapUiMediumMarginBottom" text="Disabled"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Regular"
+                                semanticType="Basic" size="Big" design="Inverted" enabled="false"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Regular"
+                                semanticType="Highlight" size="Big" design="Inverted" enabled="false"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Regular"
+                                semanticType="Sales" size="Big" design="Inverted" enabled="false"/>
+            </VBox>
+
+            <VBox class="sapUiSmallMarginEnd">
+                <Text class="SamplePageText sapUiMediumMarginBottom" text="Busy"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Regular"
+                                semanticType="Basic" size="Big" design="Inverted" busy="{sample>/busy}" busyIndicatorDelay="{sample>/delay}"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Regular"
+                                semanticType="Highlight" size="Big" design="Inverted" busy="{sample>/busy}" busyIndicatorDelay="{sample>/delay}"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Regular"
+                                semanticType="Sales" size="Big" design="Inverted" busy="{sample>/busy}" busyIndicatorDelay="{sample>/delay}"/>
+            </VBox>
+
+        </HBox>
+
+        <!--Regular Small Ghost-->
+        <Title text="Regular Small Ghost" class="SamplePageText sapUiMediumMarginTopBottom"/>
+
+        <HBox>
+
+            <VBox class="sapUiSmallMarginEnd">
+                <Text class="SamplePageText sapUiMediumMarginBottom" text="Default / Hover / Active / Focus"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Regular"
+                                semanticType="Basic" size="Small" design="Inverted"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Regular"
+                                semanticType="Highlight" size="Small" design="Inverted"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Regular"
+                                semanticType="Sales" size="Small" design="Inverted"/>
+            </VBox>
+
+            <VBox class="sapUiSmallMarginEnd">
+                <Text class="SamplePageText sapUiMediumMarginBottom" text="Disabled"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Regular"
+                                semanticType="Basic" size="Small" design="Inverted" enabled="false"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Regular"
+                                semanticType="Highlight" size="Small" design="Inverted" enabled="false"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Regular"
+                                semanticType="Sales" size="Small" design="Inverted" enabled="false"/>
+            </VBox>
+
+            <VBox class="sapUiSmallMarginEnd">
+                <Text class="SamplePageText sapUiMediumMarginBottom" text="Busy"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Regular"
+                                semanticType="Basic" size="Small" design="Inverted" busy="{sample>/busy}" busyIndicatorDelay="{sample>/delay}"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Regular"
+                                semanticType="Highlight" size="Small" design="Inverted" busy="{sample>/busy}" busyIndicatorDelay="{sample>/delay}"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Regular"
+                                semanticType="Sales" size="Small" design="Inverted" busy="{sample>/busy}" busyIndicatorDelay="{sample>/delay}"/>
+            </VBox>
+
+        </HBox>
+
+        <!--Circle Big Filled-->
+        <Title text="Circle Big Filled" class="SamplePageText sapUiMediumMarginTopBottom"/>
+
+        <HBox>
+
+            <VBox class="sapUiSmallMarginEnd">
+                <Text class="SamplePageText sapUiMediumMarginBottom" text="Default / Hover / Active / Focus"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Circle"
+                                semanticType="Basic" size="Big" design="Inverted"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Circle"
+                                semanticType="Highlight" size="Big" design="Inverted"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Circle"
+                                semanticType="Sales" size="Big" design="Inverted"/>
+            </VBox>
+
+            <VBox class="sapUiSmallMarginEnd">
+                <Text class="SamplePageText sapUiMediumMarginBottom" text="Disabled"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Circle"
+                                semanticType="Basic" size="Big" design="Inverted" enabled="false"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Circle"
+                                semanticType="Highlight" size="Big" design="Inverted" enabled="false"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Circle"
+                                semanticType="Sales" size="Big" design="Inverted" enabled="false"/>
+            </VBox>
+
+            <VBox class="sapUiSmallMarginEnd">
+                <Text class="SamplePageText sapUiMediumMarginBottom" text="Busy"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Circle"
+                                semanticType="Basic" size="Big" design="Inverted" busy="{sample>/busy}" busyIndicatorDelay="{sample>/delay}"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Circle"
+                                semanticType="Highlight" size="Big" design="Inverted" busy="{sample>/busy}" busyIndicatorDelay="{sample>/delay}"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Circle"
+                                semanticType="Sales" size="Big" design="Inverted" busy="{sample>/busy}" busyIndicatorDelay="{sample>/delay}"/>
+            </VBox>
+
+        </HBox>
+
+        <!--Circle Small Filled-->
+        <Title text="Circle Small Filled" class="SamplePageText sapUiMediumMarginTopBottom"/>
+
+        <HBox>
+
+            <VBox class="sapUiSmallMarginEnd">
+                <Text class="SamplePageText sapUiMediumMarginBottom" text="Default / Hover / Active / Focus"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Circle"
+                                semanticType="Basic" size="Small" design="Inverted"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Circle"
+                                semanticType="Highlight" size="Small" design="Inverted"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Circle"
+                                semanticType="Sales" size="Small" design="Inverted"/>
+            </VBox>
+
+            <VBox class="sapUiSmallMarginEnd">
+                <Text class="SamplePageText sapUiMediumMarginBottom" text="Disabled"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Circle"
+                                semanticType="Basic" size="Small" design="Inverted" enabled="false"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Circle"
+                                semanticType="Highlight" size="Small" design="Inverted" enabled="false"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Circle"
+                                semanticType="Sales" size="Small" design="Inverted" enabled="false"/>
+            </VBox>
+
+            <VBox class="sapUiSmallMarginEnd">
+                <Text class="SamplePageText sapUiMediumMarginBottom" text="Busy"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Circle"
+                                semanticType="Basic" size="Small" design="Inverted" busy="{sample>/busy}" busyIndicatorDelay="{sample>/delay}"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Circle"
+                                semanticType="Highlight" size="Small" design="Inverted" busy="{sample>/busy}" busyIndicatorDelay="{sample>/delay}"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Circle"
+                                semanticType="Sales" size="Small" design="Inverted" busy="{sample>/busy}" busyIndicatorDelay="{sample>/delay}"/>
+            </VBox>
+
+        </HBox>
+
+        <!--Circle Big Ghost-->
+        <Title text="Circle Big Ghost" class="SamplePageText sapUiMediumMarginTopBottom"/>
+
+        <HBox>
+
+            <VBox class="sapUiSmallMarginEnd">
+                <Text class="SamplePageText sapUiMediumMarginBottom" text="Default / Hover / Active / Focus"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Circle"
+                                semanticType="Basic" size="Big" design="Inverted"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Circle"
+                                semanticType="Highlight" size="Big" design="Inverted"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Circle"
+                                semanticType="Sales" size="Big" design="Inverted"/>
+            </VBox>
+
+            <VBox class="sapUiSmallMarginEnd">
+                <Text class="SamplePageText sapUiMediumMarginBottom" text="Disabled"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Circle"
+                                semanticType="Basic" size="Big" design="Inverted" enabled="false"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Circle"
+                                semanticType="Highlight" size="Big" design="Inverted" enabled="false"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Circle"
+                                semanticType="Sales" size="Big" design="Inverted" enabled="false"/>
+            </VBox>
+
+            <VBox class="sapUiSmallMarginEnd">
+                <Text class="SamplePageText sapUiMediumMarginBottom" text="Busy"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Circle"
+                                semanticType="Basic" size="Big" design="Inverted" busy="{sample>/busy}" busyIndicatorDelay="{sample>/delay}"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Circle"
+                                semanticType="Highlight" size="Big" design="Inverted" busy="{sample>/busy}" busyIndicatorDelay="{sample>/delay}"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Circle"
+                                semanticType="Sales" size="Big" design="Inverted" busy="{sample>/busy}" busyIndicatorDelay="{sample>/delay}"/>
+            </VBox>
+
+        </HBox>
+
+        <!--Circle Small Ghost-->
+        <Title text="Circle Small Ghost" class="SamplePageText sapUiMediumMarginTopBottom"/>
+
+        <HBox>
+
+            <VBox class="sapUiSmallMarginEnd">
+                <Text class="SamplePageText sapUiMediumMarginBottom" text="Default / Hover / Active / Focus"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Circle"
+                                semanticType="Basic" size="Small" design="Inverted"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Circle"
+                                semanticType="Highlight" size="Small" design="Inverted"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Circle"
+                                semanticType="Sales" size="Small" design="Inverted"/>
+            </VBox>
+
+            <VBox class="sapUiSmallMarginEnd">
+                <Text class="SamplePageText sapUiMediumMarginBottom" text="Disabled"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Circle"
+                                semanticType="Basic" size="Small" design="Inverted" enabled="false"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Circle"
+                                semanticType="Highlight" size="Small" design="Inverted" enabled="false"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Circle"
+                                semanticType="Sales" size="Small" design="Inverted" enabled="false"/>
+            </VBox>
+
+            <VBox class="sapUiSmallMarginEnd">
+                <Text class="SamplePageText sapUiMediumMarginBottom" text="Busy"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Circle"
+                                semanticType="Basic" size="Small" design="Inverted" busy="{sample>/busy}" busyIndicatorDelay="{sample>/delay}"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Circle"
+                                semanticType="Highlight" size="Small" design="Inverted" busy="{sample>/busy}" busyIndicatorDelay="{sample>/delay}"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Circle"
+                                semanticType="Sales" size="Small" design="Inverted" busy="{sample>/busy}" busyIndicatorDelay="{sample>/delay}"/>
+            </VBox>
+
+        </HBox>
+
+
+
+
+
+
+        <!--Square Big Filled-->
+        <Title text="Square Big Filled" class="SamplePageText sapUiMediumMarginTopBottom"/>
+
+        <HBox>
+
+            <VBox class="sapUiSmallMarginEnd">
+                <Text class="SamplePageText sapUiMediumMarginBottom" text="Default / Hover / Active / Focus"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Square"
+                                semanticType="Basic" size="Big" design="Inverted"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Square"
+                                semanticType="Highlight" size="Big" design="Inverted"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Square"
+                                semanticType="Sales" size="Big" design="Inverted"/>
+            </VBox>
+
+            <VBox class="sapUiSmallMarginEnd">
+                <Text class="SamplePageText sapUiMediumMarginBottom" text="Disabled"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Square"
+                                semanticType="Basic" size="Big" design="Inverted" enabled="false"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Square"
+                                semanticType="Highlight" size="Big" design="Inverted" enabled="false"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Square"
+                                semanticType="Sales" size="Big" design="Inverted" enabled="false"/>
+            </VBox>
+
+            <VBox class="sapUiSmallMarginEnd">
+                <Text class="SamplePageText sapUiMediumMarginBottom" text="Busy"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Square"
+                                semanticType="Basic" size="Big" design="Inverted" busy="{sample>/busy}" busyIndicatorDelay="{sample>/delay}"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Square"
+                                semanticType="Highlight" size="Big" design="Inverted" busy="{sample>/busy}" busyIndicatorDelay="{sample>/delay}"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Square"
+                                semanticType="Sales" size="Big" design="Inverted" busy="{sample>/busy}" busyIndicatorDelay="{sample>/delay}"/>
+            </VBox>
+
+        </HBox>
+
+        <!--Square Small Filled-->
+        <Title text="Square Small Filled" class="SamplePageText sapUiMediumMarginTopBottom"/>
+
+        <HBox>
+
+            <VBox class="sapUiSmallMarginEnd">
+                <Text class="SamplePageText sapUiMediumMarginBottom" text="Default / Hover / Active / Focus"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Square"
+                                semanticType="Basic" size="Small" design="Inverted"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Square"
+                                semanticType="Highlight" size="Small" design="Inverted"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Square"
+                                semanticType="Sales" size="Small" design="Inverted"/>
+            </VBox>
+
+            <VBox class="sapUiSmallMarginEnd">
+                <Text class="SamplePageText sapUiMediumMarginBottom" text="Disabled"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Square"
+                                semanticType="Basic" size="Small" design="Inverted" enabled="false"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Square"
+                                semanticType="Highlight" size="Small" design="Inverted" enabled="false"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Square"
+                                semanticType="Sales" size="Small" design="Inverted" enabled="false"/>
+            </VBox>
+
+            <VBox class="sapUiSmallMarginEnd">
+                <Text class="SamplePageText sapUiMediumMarginBottom" text="Busy"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Square"
+                                semanticType="Basic" size="Small" design="Inverted" busy="{sample>/busy}" busyIndicatorDelay="{sample>/delay}"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Square"
+                                semanticType="Highlight" size="Small" design="Inverted" busy="{sample>/busy}" busyIndicatorDelay="{sample>/delay}"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Filled"
+                                shape="Square"
+                                semanticType="Sales" size="Small" design="Inverted" busy="{sample>/busy}" busyIndicatorDelay="{sample>/delay}"/>
+            </VBox>
+
+        </HBox>
+
+        <!--Square Big Ghost-->
+        <Title text="Square Big Ghost" class="SamplePageText sapUiMediumMarginTopBottom"/>
+
+        <HBox>
+
+            <VBox class="sapUiSmallMarginEnd">
+                <Text class="SamplePageText sapUiMediumMarginBottom" text="Default / Hover / Active / Focus"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Square"
+                                semanticType="Basic" size="Big" design="Inverted"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Square"
+                                semanticType="Highlight" size="Big" design="Inverted"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Square"
+                                semanticType="Sales" size="Big" design="Inverted"/>
+            </VBox>
+
+            <VBox class="sapUiSmallMarginEnd">
+                <Text class="SamplePageText sapUiMediumMarginBottom" text="Disabled"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Square"
+                                semanticType="Basic" size="Big" design="Inverted" enabled="false"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Square"
+                                semanticType="Highlight" size="Big" design="Inverted" enabled="false"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Square"
+                                semanticType="Sales" size="Big" design="Inverted" enabled="false"/>
+            </VBox>
+
+            <VBox class="sapUiSmallMarginEnd">
+                <Text class="SamplePageText sapUiMediumMarginBottom" text="Busy"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Square"
+                                semanticType="Basic" size="Big" design="Inverted" busy="{sample>/busy}" busyIndicatorDelay="{sample>/delay}"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Square"
+                                semanticType="Highlight" size="Big" design="Inverted" busy="{sample>/busy}" busyIndicatorDelay="{sample>/delay}"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Square"
+                                semanticType="Sales" size="Big" design="Inverted" busy="{sample>/busy}" busyIndicatorDelay="{sample>/delay}"/>
+            </VBox>
+
+        </HBox>
+
+        <!--Square Small Ghost-->
+        <Title text="Square Small Ghost" class="SamplePageText sapUiMediumMarginTopBottom"/>
+
+        <HBox>
+
+            <VBox class="sapUiSmallMarginEnd">
+                <Text class="SamplePageText sapUiMediumMarginBottom" text="Default / Hover / Active / Focus"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Square"
+                                semanticType="Basic" size="Small" design="Inverted"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Square"
+                                semanticType="Highlight" size="Small" design="Inverted"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Square"
+                                semanticType="Sales" size="Small" design="Inverted"/>
+            </VBox>
+
+            <VBox class="sapUiSmallMarginEnd">
+                <Text class="SamplePageText sapUiMediumMarginBottom" text="Disabled"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Square"
+                                semanticType="Basic" size="Small" design="Inverted" enabled="false"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Square"
+                                semanticType="Highlight" size="Small" design="Inverted" enabled="false"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Square"
+                                semanticType="Sales" size="Small" design="Inverted" enabled="false"/>
+            </VBox>
+
+            <VBox class="sapUiSmallMarginEnd">
+                <Text class="SamplePageText sapUiMediumMarginBottom" text="Busy"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Square"
+                                semanticType="Basic" size="Small" design="Inverted" busy="{sample>/busy}" busyIndicatorDelay="{sample>/delay}"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Square"
+                                semanticType="Highlight" size="Small" design="Inverted" busy="{sample>/busy}" busyIndicatorDelay="{sample>/delay}"/>
+
+                <library:Button class="sapUiSmallMarginBottom" text="{sample>/text}" icon="{sample>/icon}" type="Ghost"
+                                shape="Square"
+                                semanticType="Sales" size="Small" design="Inverted" busy="{sample>/busy}" busyIndicatorDelay="{sample>/delay}"/>
+            </VBox>
+
+        </HBox>
+    </Page>
+</mvc:View>

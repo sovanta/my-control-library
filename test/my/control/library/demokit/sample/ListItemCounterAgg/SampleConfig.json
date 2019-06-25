@@ -1,0 +1,5 @@
+{
+  "name": "List Item - Counter Aggregation",
+  "description": "Using a custom Counter Badge control",
+  "component" : "my.control.library.ListItem"
+}

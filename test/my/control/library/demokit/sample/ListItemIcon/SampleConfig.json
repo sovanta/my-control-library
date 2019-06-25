@@ -1,0 +1,5 @@
+{
+  "name" : "ListItemIcon",
+  "description" : "ListItemIcon Sample",
+  "component" : "my.control.library.ListItem"
+}
